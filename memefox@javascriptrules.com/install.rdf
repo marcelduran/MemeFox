@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+  <Description about="urn:mozilla:install-manifest">
+   
+    <em:id>memefox@javascriptrules.com</em:id>
+    <em:name>Yahoo! Meme Notifier</em:name>
+    <em:version>0.1</em:version>
+    <em:description>Notifies new posts on your Meme</em:description>
+    <em:creator>Marcel Duran</em:creator>
+    <!--<em:contributor>add contributor here</em:contributor>-->
+    <!--<em:contributor>add contributor here</em:contributor>-->
+    
+    <em:homepageURL>http://labs.javascriptrules.com/memefox</em:homepageURL>
+    <em:iconURL>chrome://memefox/content/logo.png</em:iconURL>
+    <em:optionsURL>chrome://memefox/content/preferences.xul</em:optionsURL>
+    <!-- <em:aboutURL>chrome://sampleext/content/about.xul</em:aboutURL>
+    <em:updateURL>http://sampleextension.mozdev.org/update.rdf</em:updateURL-->
+    
+    <!-- Firefox -->
+    <em:targetApplication>
+      <Description>
+        <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+        <em:minVersion>1.5</em:minVersion>
+        <em:maxVersion>3.0.*</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+    
+  </Description>
+
+</RDF>

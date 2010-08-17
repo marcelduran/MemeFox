@@ -1,0 +1,4 @@
+content memefox chrome/content/
+overlay chrome://browser/content/browser.xul chrome://memefox/content/memefox.xul
+skin memefox classic/1.0 chrome/skin/
+locale memefox en-US chrome/locale/en-US/

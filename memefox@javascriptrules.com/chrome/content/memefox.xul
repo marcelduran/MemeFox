@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://memefox/skin/memefox.css" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://memefox/locale/memefox.dtd">
+<overlay id="memefox-overlay"
+    xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+    <script src="memefox.js" />
+
+    <toolbox id="navigator-toolbox">
+        <tooltip id="memefox-tooltip" orient="vertical">
+            <description id="memefox-status-tooltip" value="MemeFox"/>
+        </tooltip>
+    </toolbox>
+
+    <statusbar id="status-bar">
+        <statusbarpanel id="memefox-statusbar-button"
+		    class="statusbarpanel-menu-iconic"
+		    context="memefox-main-menupopup"
+		    ondblclick="memeFox.openDashboard()"
+		    onclick="memeFox.togglePanel(event)"
+		    tooltip="memefox-tooltip">
+            <label id="memefox-statusbar-text" style="margin: 1px" value="0"/>
+        </statusbarpanel>
+
+        <popupset id="memefox-popupset">
+            <menupopup id="memefox-main-menupopup">
+                <menuitem id="memefox-menuitem-togglepopup" label="&memefox.showpopup;" oncommand="memeFox.togglePopup()" type="checkbox" checked="true"/>
+                <menuitem id="memefox-menuitem-update" label="&memefox.update;" oncommand="memeFox.updatePosts()" />
+                <menuitem id="memefox-menuitem-markread" label="&memefox.markAllAsRead;" oncommand="memeFox.markAllRead()" />
+                <menuseparator/>
+                <menuitem id="memefox-menuitem-preference" label="&memefox.preference;" oncommand="memeFox.showPreferences()" />
+            </menupopup>
+        </popupset>
+    </statusbar>
+</overlay>
